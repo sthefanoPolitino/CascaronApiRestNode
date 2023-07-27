@@ -1,4 +1,5 @@
 const express = require('express')
+const { swaggerDocs } = require("../swager");
 const cors = require('cors')
 class Server { //server orientado a objetos
 
@@ -28,6 +29,7 @@ class Server { //server orientado a objetos
     }
     listen() {
         this.app.listen(this.port)
+        swaggerDocs(this.app, this.port);
     }
 }
 module.exports = Server;
