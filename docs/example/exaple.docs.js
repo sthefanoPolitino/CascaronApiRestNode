@@ -1,11 +1,11 @@
 /**
   @openapi
  *  paths: 
- *  /login:
+ *  /example:
  *   post:
  *    summary: Login user with email and password
  *    tags:
- *        - Auth module
+ *        - example module
  *    requestBody:
  *        description: JSON
  *        required: true
@@ -38,10 +38,10 @@
  *                       correo:
  *                         type: string
  *                         example: sthefanopoli@email.com
- *  /api/usuarios:
- *     get:
- *      summary: Return all users of the app
+ *  /example2:
+ *     put:
+ *      summary: Sing in and create user with google
  *      tags:
- *          - Auth module
+ *          - example module
  *  
  */

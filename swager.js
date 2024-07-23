@@ -1,16 +1,16 @@
 const swaggerJsdoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
-
+const urlBase = "./docs/";
 const options = {
   definition: {
     openapi: "3.0.0",
     info: {
       title: "Api rest NodeJS",
-      description: "Api rest de login de usuarios con mongodb",
+      description: "Api rest de cascaron para futuros proyectos",
       version: "1.0.0",
     },
   },
-  apis: ["./docs/auth/*.js"],
+  apis: [`${urlBase}usuarios/*.js`, `${urlBase}example/*.js`],
 };
 
 const swaggerSpec = swaggerJsdoc(options);
